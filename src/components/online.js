@@ -5,12 +5,12 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function App({ server = "sg" }) {
 
   var host;
-  if(server == "s1"){
+  if(server == "天理一服"){
     host = "1.casks.me"
-  } else if(server == "s2"){
+  } else if(server == "天理二服"){
     host = "2.casks.me"
-  } else if(server == "s3"){
-    host = "yuanshen2.fvck.top:19999"
+  } else if(server == "天理测试服"){
+    host = "test.casks.me"
   }
   
   const { data, error } = useSWR(
