@@ -2,7 +2,7 @@ import useSWR from 'swr';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export default function App() {
+export default function App({ server = "sg" }) {
 
 
   if(server == "s1"){
