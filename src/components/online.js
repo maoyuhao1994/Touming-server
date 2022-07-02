@@ -4,7 +4,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function App({ server = "sg" }) {
 
-
+  var host;
   if(server == "s1"){
     host = "1.casks.me"
   } else if(server == "s2"){
