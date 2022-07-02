@@ -9,7 +9,7 @@ export default function App({ server = "sg" }) {
     fetcher
   );
 
-  //console.log("tes", data);
+  console.log("tes", data);
   if(server == "s1"){
     server = "1.casks.me"
   } else if(server == "s2"){
