@@ -5,17 +5,19 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function App({ server = "sg" }) {
 
   const { data, error } = useSWR(
-    `https://1.casks.me/status/server`,
+    `https://${server}/status/server`,
     fetcher
   );
 
   //console.log("tes", data);
-  if(server == "sg"){
-    server = "Singapore"
+  if(server == "s1"){
+    server = "1.casks.me"
+  } else if(server == "s2"){
+    server = "2.casks.me"
+  } else if(server == "s3"){
+    server = "yuanshen2.fvck.top:19999"
   }
-  if(server == "de"){
-    server = "German"
-  }
+
   var online = "?";
   if(data){
     if(data.status){
