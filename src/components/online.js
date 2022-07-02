@@ -2,21 +2,23 @@ import useSWR from 'swr';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export default function App({ server = "sg" }) {
+export default function App() {
 
+
+  if(server == "s1"){
+    host = "1.casks.me"
+  } else if(server == "s2"){
+    host = "2.casks.me"
+  } else if(server == "s3"){
+    host = "yuanshen2.fvck.top:19999"
+  }
+  
   const { data, error } = useSWR(
-    `https://${server}/status/server`,
+    `https://${host}/status/server`,
     fetcher
   );
 
   console.log("tes", data);
-  if(server == "s1"){
-    server = "1.casks.me"
-  } else if(server == "s2"){
-    server = "2.casks.me"
-  } else if(server == "s3"){
-    server = "yuanshen2.fvck.top:19999"
-  }
 
   var online = "?";
   if(data){
