@@ -5,7 +5,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function App({ server = "sg" }) {
 
   const { data, error } = useSWR(
-    `https://${server}.game.yuuki.me/status/server`,
+    `https://1.casks.me/status/server`,
     fetcher
   );
 
