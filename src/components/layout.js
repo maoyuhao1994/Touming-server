@@ -33,13 +33,12 @@ export default function Layout({ children, home }) {
             <footer class="text-center py-3">
                 <p>
                     <a href="https://discord.gg/RnRnYcEc7J">
-                        <img src="https://discordapp.com/api/guilds/964119462188040202/widget.png?style=banner2" alt="DockerGC"></img>
+                        <img src="https://cdn.discordapp.com/attachments/982111596966985798/982243198237802556/Untitled-2.jpg" alt="DockerGC"></img>
                     </a>
                 </p>
                 <p class="mt-4">
-                    <a href="https://yuuki.me/" target="_blank" rel="sponsored">Made with <span class="heart">❤</span> in Indonesia,Makassar</a>
+                    <a href="https://github.com/casksteven/Casks-server" target="_blank" rel="sponsored">修改至Yukki</a>
                 </p>
-                <p>Powered by Vercel | <a href="https://stats.uptimerobot.com/L8Nx6FL4V" rel="nofollow" target="_blank">Status Server</a></p>
 
             </footer>
         </div>
