@@ -32,12 +32,10 @@ export default function Layout({ children, home }) {
             )}
             <footer class="text-center py-3">
                 <p>
-                    <a href="https://discord.gg/RnRnYcEc7J">
-                        <img src="https://cdn.discordapp.com/attachments/982111596966985798/982243198237802556/Untitled-2.jpg" alt="DockerGC"></img>
-                    </a>
+                    <a href="https://discord.gg/RnRnYcEc7J" target="_blank" rel="sponsored">加群</a>
                 </p>
                 <p class="mt-4">
-                    <a href="https://github.com/casksteven/Casks-server" target="_blank" rel="sponsored">修改至Yukki</a>
+                    <a href="https://github.com/casksteven/Casks-server" target="_blank" rel="sponsored">@Casksteven | 修改于Yukki</a>
                 </p>
 
             </footer>
