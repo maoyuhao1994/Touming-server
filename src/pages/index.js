@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import { getSortedPostsData } from '../lib/posts'
 import Online from '../components/online'
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -39,19 +38,6 @@ export default function Home({ allPostsData }) {
 
         </div>
 
-        <div class="grid">
-
-          {allPostsData.map(({ id, date, title, short }) => (
-
-            <a href={`/posts/${id}`} class="card">
-              <h3>{title} &rarr;</h3>
-              <p>{short}</p>
-              {date}
-            </a>
-
-          ))}
-
-        </div>
       </div>
     </Layout>
   )
