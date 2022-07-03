@@ -39,19 +39,6 @@ export default function Home({ allPostsData }) {
 
         </div>
 
-        <div class="grid">
-
-          {allPostsData.map(({ id, date, title, short }) => (
-
-            <a href={`/posts/${id}`} class="card">
-              <h3>{title} &rarr;</h3>
-              <p>{short}</p>
-              {date}
-            </a>
-
-          ))}
-
-        </div>
       </div>
     </Layout>
   )
