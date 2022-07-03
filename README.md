@@ -1,2 +1,1 @@
-# YuukiGame-Web
-This is for the yuuki server for web purposes.
+# 天理服务器状态监测
