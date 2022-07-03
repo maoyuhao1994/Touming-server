@@ -22,11 +22,11 @@ export default function Home({ allPostsData }) {
       <div class="home">
 
         <h1 class="title">
-          Welcome to {siteTitle}
+          欢迎来到 {siteTitle}
         </h1>
 
         <p class="description">
-          This site is still under developer. please check regularly
+          测试服开着呢，但是这个破玩意不能取没装证书的服
         </p>
 
         <div class="text-center py-3">
