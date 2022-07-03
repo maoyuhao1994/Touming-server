@@ -36,6 +36,11 @@ export default function Layout({ children, home }) {
                         <img src="https://discordapp.com/api/guilds/964119462188040202/widget.png?style=banner2" alt="DockerGC"></img>
                     </a>
                 </p>
+                <p>
+                    <a href="https://discord.gg/RnRnYcEc7J">
+                        <img src="https://discordapp.com/api/guilds/964119462188040202/widget.png?style=banner2" alt="DockerGC"></img>
+                    </a>
+                </p>
                 <p class="mt-4">
                     <a href="https://yuuki.me/" target="_blank" rel="sponsored">Made with <span class="heart">❤</span> in Indonesia,Makassar</a>
                 </p>
