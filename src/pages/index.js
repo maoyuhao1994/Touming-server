@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
 
         </div>
         
-        <p class="footer">
+        <p class="text-center">
           一服电脑：1.casks.me 手机：https://1.casks.me <br/>
           二服电脑：2.casks.me 手机：https://2.casks.me <br/>
           测试服电脑：test.casks.me 手机：https://test.casks.me
