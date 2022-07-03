@@ -38,6 +38,17 @@ export default function Home({ allPostsData }) {
           </div>
 
         </div>
+        
+        <h3 class="title">
+          一服IP：电脑：1.casks.me 手机：https://1.casks.me 
+          二服IP：电脑：2.casks.me 手机：https://2.casks.me 
+          测试服IP：电脑：test.casks.me 手机：https://test.casks.me
+        </h3>
+
+        <h2 class="title">
+        <a href="https://casks.me" target="_blank" rel="sponsored">网站|教程</a>
+        
+        </h2>
 
       </div>
     </Layout>
