@@ -26,7 +26,7 @@ export default function Home({ allPostsData }) {
         </h1>
 
         <p class="description">
-          测试服开着呢，但是这个破玩意不能取没装证书的服
+          玩的开心哦！
         </p>
 
         <div class="text-center py-3">
