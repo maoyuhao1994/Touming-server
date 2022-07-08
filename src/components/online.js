@@ -9,8 +9,8 @@ export default function App({ server = "sg" }) {
     host = "1.casks.me"
   } else if(server == "天理二服"){
     host = "2.casks.me"
-  } else if(server == "天理测试服"){
-    host = "test.casks.me"
+  } else if(server == "天理魂服"){
+    host = "soul.casks.me"
   }
   
   const { data, error } = useSWR(
