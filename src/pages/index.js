@@ -34,7 +34,7 @@ export default function Home({ allPostsData }) {
           <div class="stats bg-primary text-primary-content">
             <Online server="天理一服" />
             <Online server="天理二服" />
-            <Online server="天理测试服" />
+            <Online server="天理魂服" />
           </div>
 
         </div>
@@ -42,7 +42,7 @@ export default function Home({ allPostsData }) {
         <p class="text-center">
           一服电脑：1.casks.me  手机：https://1.casks.me <br/>
           二服电脑：2.casks.me  手机：https://2.casks.me <br/>
-          测试服电脑：test.casks.me  手机：https://test.casks.me <br/>
+          测试服电脑：soul.casks.me  手机：https://soul.casks.me <br/>
         </p>
 
         <p class="description">
