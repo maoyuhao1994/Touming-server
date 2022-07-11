@@ -34,7 +34,7 @@ export default function App({ server = "sg" }) {
   
   return (
 
-      <div class="title">
+      <div class="stat">
         <div class="stat-title">{server}</div>
         <div class="title">{online}</div>
         <div class="stat-desc">在线人数</div>
