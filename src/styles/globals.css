@@ -143,3 +143,8 @@ menu {
     line-height: 32px;
     list-style: inside;
 }
+
+.servers {
+    --tw-bg-opacity: 0;
+    display: block;
+}

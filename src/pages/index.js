@@ -31,7 +31,7 @@ export default function Home({ allPostsData }) {
 
         <div class="text-center py-4">
           
-          <div class="stats bg-primary text-primary-content">
+          <div class="stats bg-primary text-primary-content servers">
             <Online server="天理一服" />
             <Online server="天理二服" />
             <Online server="天理魂服" />
