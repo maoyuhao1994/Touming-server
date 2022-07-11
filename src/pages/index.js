@@ -41,6 +41,7 @@ export default function Home({ allPostsData }) {
         </div>
         
         <p class="text-center">
+          服务器地址是输入到代理里面的，请勿将其直接输入浏览器，不好的请看下方教程<br/>
           电脑的端口留空或者输443就好 <br/>
         </p>
 
