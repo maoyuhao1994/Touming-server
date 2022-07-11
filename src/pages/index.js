@@ -32,18 +32,16 @@ export default function Home({ allPostsData }) {
         <div class="text-center py-4">
           
           <div class="stats bg-primary text-primary-content servers">
-            <Online server="天理一服" />
-            <Online server="天理二服" />
-            <Online server="天理魂服" />
-            <Online server="天理2.8服" />
+            <Online server="天理一服 地址：电脑：1.casks.me 手机：https://1.casks.me" />
+            <Online server="天理二服 电脑：2.casks.me  手机：https://2.casks.me" />
+            <Online server="天理魂服 电脑：soul.casks.me  手机：https://soul.casks.me" />
+            <Online server="天理2.8服 电脑：28.casks.me  手机：https://28.casks.me" />
           </div>
 
         </div>
         
         <p class="text-center">
-          一服电脑：1.casks.me  手机：https://1.casks.me <br/>
-          二服电脑：2.casks.me  手机：https://2.casks.me <br/>
-          测试服电脑：soul.casks.me  手机：https://soul.casks.me <br/>
+          电脑的端口留空或者输443就好 <br/>
         </p>
 
         <p class="description">
