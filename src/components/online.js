@@ -11,6 +11,8 @@ export default function App({ server = "sg" }) {
     host = "2.casks.me"
   } else if(server == "天理魂服"){
     host = "soul.casks.me"
+  } else if(server == "天理2.8服"){
+    host = "28.casks.me"
   }
   
   const { data, error } = useSWR(

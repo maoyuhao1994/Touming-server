@@ -29,12 +29,13 @@ export default function Home({ allPostsData }) {
           玩的开心哦！
         </p>
 
-        <div class="text-center py-3">
+        <div class="text-center py-4">
           
           <div class="stats bg-primary text-primary-content">
             <Online server="天理一服" />
             <Online server="天理二服" />
             <Online server="天理魂服" />
+            <Online server="天理2.8服" />
           </div>
 
         </div>
