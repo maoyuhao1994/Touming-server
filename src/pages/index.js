@@ -36,6 +36,7 @@ export default function Home({ allPostsData }) {
             <Online server="天理二服" />
             <Online server="天理魂服" />
             <Online server="天理2.8服" />
+            <Online server="天理2.8.5x服" />
           </div>
 
         </div>
