@@ -13,12 +13,12 @@ export default function App({ server = "sg" }) {
   } else if(server == "天理2.8二服"){
         host = "28.casks.me"
         seraddress = "电脑：28.casks.me 手机：https://28.casks.me"
-  } else if(server == "天理魂服"){
+  }  else if(server == "天理魂服"){
         host = "soul.casks.me"
         seraddress = "电脑：soul.casks.me 手机：https://soul.casks.me"
   } else if(server == "天理2.7版本服"){
         host = "2.casks.me"
-        seraddress = "电脑：27.casks.me 手机：https://27.casks.me"
+        seraddress = "电脑：2.casks.me 手机：https://2.casks.me"
   } else if(server == "天理2.8.5x服"){
        host = "285.casks.me"
        seraddress = "电脑：285.casks.me 手机暂不支持"
