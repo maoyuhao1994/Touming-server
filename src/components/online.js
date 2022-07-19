@@ -21,7 +21,7 @@ export default function App({ server = "sg" }) {
         seraddress = "电脑：2.casks.me 手机：https://2.casks.me"
   } else if(server == "天理2.8.5x服"){
        host = "285.casks.me"
-       seraddress = "电脑：285.casks.me 手机暂不支持"
+       seraddress = "电脑：28.casks.me 手机暂不支持"
   }
 
   const { data, error } = useSWR(
