@@ -20,7 +20,7 @@ export default function App({ server = "sg" }) {
     host = "28.casks.me"
     seraddress = "电脑：28.casks.me 手机：https://28.casks.me"
   } else if(server == "天理2.8.5x服"){
-       host = "28.casks.me"
+       host = "285.casks.me"
        seraddress = "电脑：28.casks.me 手机暂不支持"
      }
 
