@@ -34,7 +34,7 @@ export default function App({ server = "sg" }) {
             online = data.status.playerCount;
           }
 
-          if(typeofdata.status.mem !== "undefined"){
+          if(typeof data.status.mem !== "undefined"){
             mem = data.status.mem;
           }
         }
