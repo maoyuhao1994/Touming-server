@@ -40,11 +40,11 @@ export default function App({ server = "sg" }) {
     }
   }
 
-  var mem = "?";
+  var mem = "不支持显示";
   if(data){
     if(data.status){
       if(data.status.mem){
-        online = data.status.mem;
+        mem = data.status.mem;
       }
     }
   }
