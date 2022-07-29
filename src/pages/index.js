@@ -21,12 +21,12 @@ export default function Home({ allPostsData }) {
 
       <div class="home">
 
-        <h1 class="title">
+        <h1 class="heading2Xl">
           欢迎来到 {siteTitle}
         </h1>
 
         <p class="description">
-          玩的开心哦！
+          服务器状态监测
         </p>
 
         <div class="text-center py-4">
