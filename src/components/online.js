@@ -3,7 +3,8 @@ import styles from './layout.module.css'
 
 const fetcher = (url) => fetch(url).then((res) => {
   console.log("res", res);
-  return res.json();
+  data = res.json();
+  console.log("data", data);
 });
 
 export default function App({ server = "sg" }) {
