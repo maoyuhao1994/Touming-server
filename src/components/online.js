@@ -36,8 +36,6 @@ export default function App({ server = "sg" }) {
     fetch(url)
     .then(res => res.json())
     .then(data => {
-      online = "数据错误";
-      mem = "";
       if(data){
         if(data.status){
           if(typeof data.status.playerCount !== "undefined"){
@@ -55,7 +53,7 @@ export default function App({ server = "sg" }) {
     .catch(error => {
       console.error('Error:', error);
       online = "连接失败";
-      mem = "不支持显示";
+      mem = "";
 
       document.getElementById(server + "_online").innerText = online;
       document.getElementById(server + "_mem").innerText = mem;
