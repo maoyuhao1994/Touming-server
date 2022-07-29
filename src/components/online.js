@@ -61,10 +61,10 @@ export default function App({ server = "sg" }) {
 
       <div class="stat">
         <div class="stat-title">{serName}</div>
-        <div class="stat-value" id="{server}_online"></div>
+        <div class="stat-value" id={server + "_online"}></div>
         <div class="stat-desc">服务器正常，检测坏了|在线人数</div>
         <div class="stat-desc">{seraddress}</div>
-        <div class="stat-desc" id="{server}_mem"></div>
+        <div class="stat-desc" id={server + "_mem"}></div>
       </div>
 
   );
