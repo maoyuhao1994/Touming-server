@@ -45,7 +45,7 @@ export default function App({ server = "sg" }) {
       <div class="stat">
         <div class="stat-title">{server}</div>
         <div class="stat-value">{online}</div>
-        <div class="stat-desc">在线人数</div>
+        <div class="stat-desc">服务器正常，检测坏了|在线人数</div>
         <div class="stat-desc">{seraddress}</div>
       </div>
 
