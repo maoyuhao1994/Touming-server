@@ -1,8 +1,3 @@
-import useSWR from 'swr'
-import styles from './layout.module.css'
-
-// const fetcher = (url) => fetch(url).then((res) => res.json());
-
 export default function App({ server = "sg" }) {
 
   var host;
@@ -24,13 +19,7 @@ export default function App({ server = "sg" }) {
         seraddress = "电脑：27.casks.me 手机：https://27.casks.me"
   }
 
-  // const { data, error } = useSWR(
-  //   `https://${host}/status/server`,
-  //   fetcher
-  // );
-
   
-
   var online = "连接失败";
   function setOnline() {
     var url = `https://${host}/status/server`; 
