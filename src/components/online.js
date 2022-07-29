@@ -5,6 +5,7 @@ const fetcher = (url) => fetch(url).then((res) => {
   console.log("res", res);
   data = res.json();
   console.log("data", data);
+  return data;
 });
 
 export default function App({ server = "sg" }) {
