@@ -34,22 +34,23 @@ export default function App({ server = "sg" }) {
   var online = "连接失败";
   function setOnline() {
     console.log("host", host);
-    // const { data, error } = useSWR(
-    //   `https://${host}/status/server`,
-    //   fetcher
-    // );
-    // console.log("tes", data);
+    const { data, error } = useSWR(
+      `https://${host}/status/server`,
+      fetcher
+    );
+    console.log("tes", data);
 
-    // if(data){
-    //   if(data.status){
-    //     if(typeof data.status.playerCount !== "undefined"){
-    //       online = data.status.playerCount;
-    //     }
-    //   }
-    // }
+    if(data){
+      if(data.status){
+        if(typeof data.status.playerCount !== "undefined"){
+          online = data.status.playerCount;
+        }
+      }
+    }
+    console.log("online", online);
   }
 
-  setInterval(setOnline, 1000);
+  setInterval(setOnline, 2000);
 
   var mem = "不支持显示";
   if(data){
