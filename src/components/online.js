@@ -55,6 +55,7 @@ export default function App({ server = "sg" }) {
     });
   }
 
+  setOnline();
   setInterval(setOnline, 3000);
   
   return (
