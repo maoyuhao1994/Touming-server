@@ -32,6 +32,7 @@ export default function App({ server = "sg" }) {
     var mem;
     var url = `https://${host}/status/server`; 
     console.log("url", url);
+
     fetch(url)
     .then(res => res.json())
     .then(data => {
@@ -46,15 +47,17 @@ export default function App({ server = "sg" }) {
           }
         }
       }
+      document.getElementById(server + "_online").innerText = online;
+      document.getElementById(server + "_mem").innerText = mem;
     })
     .catch(error => {
       console.error('Error:', error);
       online = "连接失败";
       mem = "不支持显示";
-    });
 
-    document.getElementById(server + "_online").innerText = online;
-    document.getElementById(server + "_mem").innerText = mem;
+      document.getElementById(server + "_online").innerText = online;
+      document.getElementById(server + "_mem").innerText = mem;
+    });
   }
 
   setStatus();
