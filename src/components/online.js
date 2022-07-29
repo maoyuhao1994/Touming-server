@@ -1,7 +1,7 @@
 import useSWR from 'swr'
 import styles from './layout.module.css'
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+// const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function App({ server = "sg" }) {
 
@@ -24,16 +24,16 @@ export default function App({ server = "sg" }) {
         seraddress = "电脑：27.casks.me 手机：https://27.casks.me"
   }
 
-  const { data, error } = useSWR(
-    `https://${host}/status/server`,
-    fetcher
-  );
+  // const { data, error } = useSWR(
+  //   `https://${host}/status/server`,
+  //   fetcher
+  // );
 
   
 
   var online = "连接失败";
   function setOnline() {
-    var url = `https://${host}/status/server`;
+    var url = `https://${host}/status/server`; 
     console.log("url", url);
     fetch(url)
     .then(res => res.json())
@@ -46,25 +46,11 @@ export default function App({ server = "sg" }) {
         }
       }
       console.log("online", online);
+      document.getElementById("count").innerText = online;
     })
     .catch(error => {
       console.error('Error:', error);
     });
-
-    // const { data, error } = useSWR(
-    //   `https://${host}/status/server`,
-    //   fetcher
-    // );
-    // console.log("tes", data);
-
-    // if(data){
-    //   if(data.status){
-    //     if(typeof data.status.playerCount !== "undefined"){
-    //       online = data.status.playerCount;
-    //     }
-    //   }
-    // }
-    // console.log("online", online);
   }
 
   setInterval(setOnline, 3000);
@@ -82,7 +68,7 @@ export default function App({ server = "sg" }) {
 
       <div class="stat">
         <div class="stat-title">{server}</div>
-        <div class="stat-value">{online}</div>
+        <div class="stat-value" id="count">{online}</div>
         <div class="stat-desc">服务器正常，检测坏了|在线人数</div>
         <div class="stat-desc">{seraddress}</div>
         <div class="stat-desc">内存占用：{mem}</div>
