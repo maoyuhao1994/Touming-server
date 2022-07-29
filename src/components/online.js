@@ -32,7 +32,7 @@ export default function App({ server = "sg" }) {
     var mem;
     var url = `https://${host}/status/server`; 
     console.log("url", url);
-    mem = "内存检测暂不支持"
+    mem = ""
 
     fetch(url)
     .then(res => res.json())
