@@ -36,6 +36,8 @@ export default function App({ server = "sg" }) {
     fetch(url)
     .then(res => res.json())
     .then(data => {
+      online = "数据错误";
+      mem = "";
       if(data){
         if(data.status){
           if(typeof data.status.playerCount !== "undefined"){
