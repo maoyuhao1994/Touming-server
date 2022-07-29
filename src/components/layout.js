@@ -36,7 +36,7 @@ export default function Layout({ children, home }) {
                 </p>
                 <p class="small">
                     <br/><br/>
-                    <a href="https://github.com/casksteven/Casks-server" target="_blank" rel="sponsored">网站修改至Yukki|源码</a>
+                    <a href="https://github.com/casksteven/Casks-server" target="_blank" rel="sponsored">网站基于Yuki修改|源码</a>
                 </p>
 
             </footer>
