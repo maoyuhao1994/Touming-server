@@ -1,7 +1,10 @@
 import useSWR from 'swr'
 import styles from './layout.module.css'
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+const fetcher = (url) => fetch(url).then((res) => {
+  console.log("res", res);
+  return res.json();
+});
 
 export default function App({ server = "sg" }) {
 
