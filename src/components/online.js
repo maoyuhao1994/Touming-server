@@ -29,16 +29,26 @@ export default function App({ server = "sg" }) {
     fetcher
   );
 
-  console.log("tes", data);
+  
 
-  var online = "?";
-  if(data){
-    if(data.status){
-      if(typeof data.status.playerCount !== "undefined"){
-        online = data.status.playerCount;
+  var online = "连接失败";
+  function setOnline() {
+    const { data, error } = useSWR(
+      `https://${host}/status/server`,
+      fetcher
+    );
+    console.log("tes", data);
+
+    if(data){
+      if(data.status){
+        if(typeof data.status.playerCount !== "undefined"){
+          online = data.status.playerCount;
+        }
       }
     }
   }
+
+  setInterval(setOnline, 1000);
 
   var mem = "不支持显示";
   if(data){
