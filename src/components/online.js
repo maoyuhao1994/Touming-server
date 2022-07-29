@@ -34,7 +34,7 @@ export default function App({ server = "sg" }) {
   var online = "连接失败";
   function setOnline() {
     console.log("host", host);
-    fetch(url)
+    fetch(host)
     .then(res => res.json())
     .then(data => {
       if(data){
