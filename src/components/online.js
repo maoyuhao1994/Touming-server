@@ -34,7 +34,7 @@ export default function App({ server = "sg" }) {
   var online = "?";
   if(data){
     if(data.status){
-      if(data.status.playerCount){
+      if(typeof data.status.playerCount !== "undefined"){
         online = data.status.playerCount;
       }
     }
