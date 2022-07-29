@@ -21,6 +21,7 @@ export default function App({ server = "sg" }) {
 
   
   var online = "连接失败";
+  var mem = "不支持显示";
   function setOnline() {
     var url = `https://${host}/status/server`; 
     console.log("url", url);
@@ -32,10 +33,15 @@ export default function App({ server = "sg" }) {
           if(typeof data.status.playerCount !== "undefined"){
             online = data.status.playerCount;
           }
+
+          if(typeofdata.status.mem !== "undefined"){
+            mem = data.status.mem;
+          }
         }
       }
-      console.log("online", online);
-      document.getElementById("count").innerText = online;
+      
+      document.getElementById("online").innerText = online;
+      document.getElementById("mem").innerText = mem;
     })
     .catch(error => {
       console.error('Error:', error);
@@ -43,24 +49,15 @@ export default function App({ server = "sg" }) {
   }
 
   setInterval(setOnline, 3000);
-
-  var mem = "不支持显示";
-  if(data){
-    if(data.status){
-      if(data.status.mem){
-        mem = data.status.mem;
-      }
-    }
-  }
   
   return (
 
       <div class="stat">
         <div class="stat-title">{server}</div>
-        <div class="stat-value" id="count">{online}</div>
+        <div class="stat-value" id="online">{online}</div>
         <div class="stat-desc">服务器正常，检测坏了|在线人数</div>
         <div class="stat-desc">{seraddress}</div>
-        <div class="stat-desc">内存占用：{mem}</div>
+        <div class="stat-desc" id="mem">内存占用：{mem}</div>
       </div>
 
   );
