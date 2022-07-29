@@ -23,7 +23,7 @@ export default function App({ server = "sg" }) {
         serName = "天理2.7版本服在线人数:"
         host = "2.casks.me"
         seraddress = "电脑：27.casks.me 手机：https://27.casks.me"
-  } else if(server == "s5"){
+  } else if(server == "s6"){
     serName = "测试服务器"
     host = "101.33.252.152"
     seraddress = "测试"
