@@ -32,11 +32,11 @@ export default function Home({ allPostsData }) {
         <div class="text-center py-4">
           
           <div class="stats bg-primary text-primary-content servers">
-            <Online server="天理2.8一服" />
-            <Online server="天理2.8二服" />
-            <Online server="天理2.8魂服" />
-            <Online server="天理2.8.5x服" />
-            <Online server="天理2.7版本服" />
+            <Online server="s1" />
+            <Online server="s2" />
+            <Online server="s3" />
+            <Online server="s4" />
+            <Online server="s5" />
           </div>
 
         </div>
