@@ -53,6 +53,7 @@ export default function App({ server = "sg" }) {
     .catch(error => {
       console.error('Error:', error);
       online = "连接失败";
+      mem = "内存检测暂不支持"
 
       document.getElementById(server + "_online").innerText = online;
       document.getElementById(server + "_mem").innerText = mem;
