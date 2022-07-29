@@ -39,12 +39,22 @@ export default function App({ server = "sg" }) {
       }
     }
   }
+
+  var mem = "?";
+  if(data){
+    if(data.status){
+      if(data.status.mem){
+        online = data.status.mem;
+      }
+    }
+  }
   
   return (
 
       <div class="stat">
         <div class="stat-title">{server}</div>
         <div class="stat-value">{online}</div>
+        <div class="stat-value">{mem}</div>
         <div class="stat-desc">服务器正常，检测坏了|在线人数</div>
         <div class="stat-desc">{seraddress}</div>
       </div>
