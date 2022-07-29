@@ -32,6 +32,7 @@ export default function App({ server = "sg" }) {
     var mem;
     var url = `https://${host}/status/server`; 
     console.log("url", url);
+    mem = "内存检测暂不支持"
 
     fetch(url)
     .then(res => res.json())
@@ -53,7 +54,6 @@ export default function App({ server = "sg" }) {
     .catch(error => {
       console.error('Error:', error);
       online = "连接失败";
-      mem = "内存检测暂不支持"
 
       document.getElementById(server + "_online").innerText = online;
       document.getElementById(server + "_mem").innerText = mem;
