@@ -27,9 +27,9 @@ export default function App({ server = "sg" }) {
 
   
 
-  function setOnline() {
-    var online = "连接失败";
-    var mem = "不支持显示";
+  function setStatus() {
+    var online;
+    var mem;
     var url = `https://${host}/status/server`; 
     console.log("url", url);
     fetch(url)
@@ -42,21 +42,23 @@ export default function App({ server = "sg" }) {
           }
 
           if(typeof data.status.mem !== "undefined"){
-            mem = data.status.mem;
+            mem = "内存占用：" + data.status.mem;
           }
         }
       }
-      
-      document.getElementById(server + "_online").innerText = online;
-      document.getElementById(server + "_mem").innerText = "内存占用：" + mem;
     })
     .catch(error => {
       console.error('Error:', error);
+      online = "连接失败";
+      mem = "不支持显示";
     });
+
+    document.getElementById(server + "_online").innerText = online;
+    document.getElementById(server + "_mem").innerText = mem;
   }
 
-  setOnline();
-  setInterval(setOnline, 3000);
+  setStatus();
+  setInterval(setStatus, 3000);
   
   return (
 
