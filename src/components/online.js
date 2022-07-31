@@ -53,7 +53,7 @@ export default function App({ server = "sg" }) {
     })
     .catch(error => {
       console.error('Error:', error);
-      online = "连接失败/不支持显示";
+      online = "连接失败";
 
       document.getElementById(server + "_online").innerText = online;
       document.getElementById(server + "_mem").innerText = mem;
