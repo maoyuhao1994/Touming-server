@@ -24,9 +24,9 @@ export default function App({ server = "sg" }) {
         host = "2.casks.me"
         seraddress = "电脑：27.casks.me 手机：https://27.casks.me"
   } else if(server == "s6"){
-    serName = "天理星穹铁道服在线人数:"
-    host = "40.81.24.12"
-    seraddress = "40.81.24.12"
+    serName = "天理星穹铁道服GSR"
+    host = "gsr.casks.me"
+    seraddress = "gsr.casks.me，请前往网站查看教程"
 }
 
   
