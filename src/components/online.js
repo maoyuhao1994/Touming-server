@@ -21,7 +21,7 @@ export default function App({ server = "sg" }) {
       seraddress = "电脑：285.casks.me:12100 手机暂不支持"
   } else if(server == "s5"){
       serName = "天理2.8.5x指令二:"
-      host = "285.casks.me:12100"
+      host = "285.casks.me:12101"
       seraddress = "电脑：285.casks.me:12100 手机暂不支持"         
   } else if(server == "s6"){
       serName = "天理2.7指令版本服在线人数:"
