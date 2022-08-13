@@ -69,7 +69,7 @@ export default function App({ server = "sg" }) {
   }
 
   setStatus();
-  setInterval(setStatus, 3000);
+  setInterval(setStatus, 5000);
   
   return (
 
