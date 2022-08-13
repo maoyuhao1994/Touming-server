@@ -61,7 +61,7 @@ export default function App({ server = "sg" }) {
     })
     .catch(error => {
       console.error('Error:', error);
-      online = "监测系统正在维护，服务器状态未知";
+      online = "获取失败";
 
       document.getElementById(server + "_online").innerText = online;
       document.getElementById(server + "_mem").innerText = mem;
