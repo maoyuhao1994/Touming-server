@@ -4,7 +4,7 @@ export default function App({ server = "sg" }) {
   var seraddress;
   var serName;
   if(server == "s1"){
-      serName = "天理2.8指令一服在线人数:"
+      serName = "天理3.0指令一服在线人数:"
       host = "1.casks.me"
       seraddress = "电脑：1.casks.me 手机：https://1.casks.me"
   } else if(server == "s2"){
@@ -13,9 +13,9 @@ export default function App({ server = "sg" }) {
       seraddress = "电脑：2.casks.me 手机：https://2.casks.me"  
   } else if(server == "s3"){
     serName = "天理3.0指令三服在线人数:"
-    host = "285.casks.me:12100"
+    host = "status.casks.me:12105"
     seraddress = "电脑：285.casks.me:12100 手机：https://285.casks.me:12100"
-  }else if(server == "s4"){
+  } else if(server == "s4"){
       serName = "天理2.8魂服（无指令）在线人数:"
       host = "soul.casks.me:12100"
       seraddress = "电脑：soul.casks.me:12100 手机：https://soul.casks.me:12100"
@@ -24,10 +24,6 @@ export default function App({ server = "sg" }) {
       host = "status.casks.me:12100"
       seraddress = "电脑：285.casks.me:12100 手机暂不支持"
   } else if(server == "s6"){
-      serName = "天理2.8.5x指令二:"
-      host = "status.casks.me:12101"
-      seraddress = "电脑：285.casks.me:12100 手机暂不支持"         
-  }  else if(server == "s7"){
     serName = "天理星穹铁道服GSR"
     host = "gsr.casks.me"
     seraddress = "gsr.casks.me，请前往网站查看教程"
