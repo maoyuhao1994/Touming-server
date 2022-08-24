@@ -8,26 +8,26 @@ export default function App({ server = "sg" }) {
       host = "1.casks.me"
       seraddress = "电脑：1.casks.me 手机：https://1.casks.me"
   } else if(server == "s2"){
-      serName = "天理2.8指令二服在线人数:"
+      serName = "天理3.0指令二服在线人数:"
       host = "28.casks.me"
-      seraddress = "电脑：28.casks.me 手机：https://28.casks.me"
+      seraddress = "电脑：2.casks.me 手机：https://2.casks.me"  
   } else if(server == "s3"){
+    serName = "天理3.0指令三服在线人数:"
+    host = "285.casks.me:12105"
+    seraddress = "电脑：285.casks.me:12105 手机：https://285.casks.me:12105"
+  }else if(server == "s4"){
       serName = "天理2.8魂服（无指令）在线人数:"
       host = "soul.casks.me:12100"
       seraddress = "电脑：soul.casks.me:12100 手机：https://soul.casks.me:12100"
-  } else if(server == "s4"){
+  } else if(server == "s5"){
       serName = "天理2.8.5x指令一:"
       host = "status.casks.me:12100"
       seraddress = "电脑：285.casks.me:12100 手机暂不支持"
-  } else if(server == "s5"){
+  } else if(server == "s6"){
       serName = "天理2.8.5x指令二:"
       host = "status.casks.me:12101"
       seraddress = "电脑：285.casks.me:12100 手机暂不支持"         
-  } else if(server == "s6"){
-      serName = "天理2.7指令版本服在线人数:"
-      host = "2.casks.me"
-      seraddress = "电脑：27.casks.me 手机：https://27.casks.me"
-  } else if(server == "s7"){
+  }  else if(server == "s7"){
     serName = "天理星穹铁道服GSR"
     host = "gsr.casks.me"
     seraddress = "gsr.casks.me，请前往网站查看教程"
