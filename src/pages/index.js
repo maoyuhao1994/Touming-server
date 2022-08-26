@@ -33,8 +33,6 @@ export default function Home({ allPostsData }) {
             <Online server="s3" />
             <Online server="s4" />
             <Online server="s5" />
-            <Online server="s6" />
-            <Online server="s7" />
           </div>
 
         </div>
