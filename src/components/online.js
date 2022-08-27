@@ -17,10 +17,10 @@ export default function App({ server = "sg" }) {
 
   function setStatus() {
     var online;
-    var mem;
+    var memoryUsage;
     var url = `https://${host}/status/server`; 
     console.log("url", url);
-    mem = ""
+    memoryUsage = ""
 
     fetch(url)
     .then(res => res.json())
@@ -32,19 +32,19 @@ export default function App({ server = "sg" }) {
           }
 
           if(typeof data.status.memoryUsage !== "undefined"){
-            mem = "内存占用：" + data.status.memoryUsage;
+            memoryUsage = "内存占用：" + data.status.memoryUsage;
           }
         }
       }
       document.getElementById(server + "_online").innerText = online;
-      document.getElementById(server + "_mem").innerText = mem;
+      document.getElementById(server + "_memoryUsage").innerText = mem;
     })
     .catch(error => {
       console.error('Error:', error);
       online = "获取失败";
 
       document.getElementById(server + "_online").innerText = online;
-      document.getElementById(server + "_mem").innerText = mem;
+      document.getElementById(server + "_memoryUsage").innerText = mem;
     });
   }
 
@@ -56,7 +56,7 @@ export default function App({ server = "sg" }) {
       <div class="stat">
         <div class="stat-title">{serName}</div>
         <div class="stat-value" id={server + "_online"}></div>
-        <div class="stat-title" id={server + "_mem"}></div>
+        <div class="stat-title" id={server + "_memoryUsage"}></div>
         <div class="stat-desc">{seraddress}</div>
 
       </div>
