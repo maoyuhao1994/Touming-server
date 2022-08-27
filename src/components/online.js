@@ -31,7 +31,7 @@ export default function App({ server = "sg" }) {
             online = data.status.playerCount;
           }
 
-          if(typeof data.status.mem !== "undefined"){
+          if(typeof data.status.memoryUsage !== "undefined"){
             mem = "内存占用：" + data.status.memoryUsage;
           }
         }
