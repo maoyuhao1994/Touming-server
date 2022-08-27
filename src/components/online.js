@@ -4,26 +4,14 @@ export default function App({ server = "sg" }) {
   var seraddress;
   var serName;
   if(server == "s1"){
-      serName = "天理3.0指令一服在线人数:"
-      host = "1.casks.me"
-      seraddress = "电脑：1.casks.me 手机：https://1.casks.me"
+      serName = "透明肝服服务器一在线人数:"
+      host = "s1.yuanshen.edu.rs"
+      seraddress = "电脑：server1.yuanshen.edu.rs"
   } else if(server == "s2"){
-      serName = "天理3.0指令二服在线人数:"
-      host = "2.casks.me"
-      seraddress = "电脑：2.casks.me 手机：https://2.casks.me"  
-  } else if(server == "s3"){
-    serName = "天理3.0指令三服在线人数:"
-    host = "3.casks.me"
-    seraddress = "电脑：3.casks.me 手机：https://3.casks.me"
-  } else if(server == "s4"){
-      serName = "天理2.8魂服（无指令）在线人数:"
-      host = "soul.casks.me:12100"
-      seraddress = "电脑：soul.casks.me:12100 手机：https://soul.casks.me:12100"
-  } else if(server == "s5"){
-    serName = "天理星穹铁道服GSR"
-    host = "gsr.casks.me"
-    seraddress = "gsr.casks.me，请前往网站查看教程"
-}
+      serName = "透明肝服服务器一在线人数:"
+      host = "s2.yuanshen.edu.rs"
+      seraddress = "电脑：server1.yuanshen.edu.rs"  
+  } 
 
   
 
@@ -44,7 +32,7 @@ export default function App({ server = "sg" }) {
           }
 
           if(typeof data.status.mem !== "undefined"){
-            mem = "内存占用：" + data.status.mem;
+            mem = "内存占用：" + data.status.memoryUsage;
           }
         }
       }
