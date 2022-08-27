@@ -22,7 +22,7 @@ export default function Home({ allPostsData }) {
       <div class="home">
 
         <h1 class="title">
-          天理服务器状态监测
+          透明服务器状态监测
         </h1>
 
         <div class="text-center py-4">
@@ -38,12 +38,11 @@ export default function Home({ allPostsData }) {
         </div>
         
         <p class="text-center">
-          服务器地址是输入到代理里面的，请勿将其直接输入浏览器，不会请看下方教程<br/>
-          电脑的端口留空或者输443就好 <br/>
+          服务器地址为：server1.yuanshen.edu.rs<br/>
+          电脑的端口随意填写就好 <br/>
         </p>
 
         <p class="description">
-        <a href="https://casks.me" target="_blank" rel="sponsored">网站|教程</a>
         </p>
 
       </div>
