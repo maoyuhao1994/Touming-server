@@ -4,13 +4,17 @@ export default function App({ server = "sg" }) {
   var host;
   var seraddress;
   var serName;
-  if(server == "s1"){
+  if(server == "sg"){
       serName = "透明肝服服务器一在线人数:"
       host = "s1.yuanshen.edu.rs"
       seraddress = "电脑：server1.yuanshen.edu.rs"
   } else if(server == "s2"){
       serName = "透明肝服服务器一在线人数:"
       host = "s2.yuanshen.edu.rs"
+      seraddress = "电脑：server1.yuanshen.edu.rs"  
+  } else if(server == "s1"){
+      serName = "透明肝服服务器二在线人数:"
+      host = "s1.yuanshen.edu.rs"
       seraddress = "电脑：server1.yuanshen.edu.rs"  
   } 
 
