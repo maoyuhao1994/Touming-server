@@ -17,28 +17,30 @@ export default function App({ server = "sg" }) {
 
   function setStatus() {
     var online;
-    var memoryUsage;
-    var url = `https://${host}/status/server`; 
-    console.log("url", url);
-    memoryUsage = ""
+    var mem;
+    var playerCountUrl = `https://${host}/status/playerCount`; 
+    var memUrl = `https://${host}/status/memoryUsage`; 
+    mem = ""
 
-    fetch(url)
+    fetch(playerCountUrl)
     .then(res => res.json())
     .then(data => {
-      if(data){
-        if(data.status){
-          if(typeof data.status.playerCount !== "undefined"){
-            online = data.status.playerCount;
-          }
+      online = data;
+      document.getElementById(server + "_online").innerText = online;
+      document.getElementById(server + "_memoryUsage").innerText = mem;})
+    .catch(error => {
+      console.error('Error:', error);
+      online = "获取失败";
 
-          if(typeof data.status.memoryUsage !== "undefined"){
-            memoryUsage = "内存占用：" + data.status.memoryUsage;
-          }
-        }
-      }
       document.getElementById(server + "_online").innerText = online;
       document.getElementById(server + "_memoryUsage").innerText = mem;
-    })
+    });
+    fetch(memUrl)
+    .then(res => res.json())
+    .then(data => {
+      mem = `当前服务器内存使用率：${data}%`;
+      document.getElementById(server + "_online").innerText = online;
+      document.getElementById(server + "_memoryUsage").innerText = mem;})
     .catch(error => {
       console.error('Error:', error);
       online = "获取失败";
