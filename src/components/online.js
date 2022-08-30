@@ -16,13 +16,15 @@ export default function App({ server = "sg" }) {
       serName = "透明肝服服务器二在线人数:"
       host = "s1.yuanshen.edu.rs"
       seraddress = "电脑：server1.yuanshen.edu.rs"  
+  } else if(server == "s3"){
+      serName = "透明肝服服务器二在线人数:"
+      host = "s3.yuanshen.edu.rs"
+      seraddress = "电脑：server1.yuanshen.edu.rs"  
   } 
 
   
 
   function setStatus() {
-    var online;
-    var mem;
     var playerCountUrl = `https://${host}/status/playerCount`; 
     var memUrl = `https://${host}/status/memoryUsage`; 
     mem = ""
@@ -30,7 +32,7 @@ export default function App({ server = "sg" }) {
     fetch(playerCountUrl)
     .then(res => res.json())
     .then(data => {
-      online = data;
+      var online = online = data;
       document.getElementById(server + "_online").innerText = online;
       document.getElementById(server + "_memoryUsage").innerText = mem;})
     .catch(error => {
@@ -43,7 +45,7 @@ export default function App({ server = "sg" }) {
     fetch(memUrl)
     .then(res => res.json())
     .then(data => {
-      mem = `当前服务器内存使用率：${data}%`;
+      var mem = `当前服务器内存使用率：${data}%`;
       document.getElementById(server + "_online").innerText = online;
       document.getElementById(server + "_memoryUsage").innerText = mem;})
     .catch(error => {
